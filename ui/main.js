@@ -4,6 +4,7 @@ var button = document.getElementById("counter");
 
 button.onclick = function () {
   
+  `<p>Here inside button</p>`
   //Make a request to the conter endpoint
   var request = new XMLHttpRequest();
   request.onreadystatechange = function(){
