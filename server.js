@@ -5,6 +5,19 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var content = {
+  title : 'Article One | SRB',
+  heading : 'Article One',
+  date : 'August 15 2017',
+  content : `<p>
+            This is article one. We are adding html pages to our code console.We are observing the changes.
+        </p>
+        <p>
+            This is article one. We are adding html pages to our code console.We are observing the changes.
+        </p>`
+};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
